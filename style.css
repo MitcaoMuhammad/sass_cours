@@ -1,19 +1,5 @@
-.heading {
-  font-family: "Helvetice", serif;
-  font-size: 48px;
-  font-weight: 800;
-}
-
-.enlarge {
-  transition-property: all;
-  transition-duration: 4s;
-  transition-delay: 2s;
-}
-
-.info-page {
-  margin: auto;
-  margin-bottom: 10px;
-  margin-top: 2px;
+.alert {
+  border: 1px solid #c6538c;
 }
 
 /*# sourceMappingURL=style.css.map */

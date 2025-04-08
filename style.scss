@@ -1,22 +1,6 @@
-.heading {
-	font: {
-		family: 'Helvetice', serif;
-		size: 48px;
-		weight: 800;
-	}
-}
+$border-color: #c6538c;
+$border-type: solid;
 
-.enlarge {
-	transition: {
-		property: all;
-		duration: 4s;
-		delay: 2s;
-	}
-}
-
-.info-page {
-	margin: auto {
-		bottom: 10px;
-		top: 2px;
-	}
+.alert {
+	border: 1px $border-type $border-color;
 }
