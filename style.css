@@ -1,12 +1,11 @@
-.alert ul,
-.alert p,
-.warning ul,
-.warning p,
-.success ul,
-.success p {
-  margin-right: 0;
-  margin-left: 0;
-  padding-bottom: 0;
+ul > li {
+  list-style-type: none;
+}
+ul > h2 + p {
+  border-top: 1px solid gray;
+}
+ul > p ~ span {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

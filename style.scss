@@ -1,10 +1,19 @@
-.alert,
-.warning,
-.success {
-	ul,
+ul > {
+	li {
+		list-style-type: none;
+	}
+
+	h2 {
+		+ p {
+			border-top: 1px solid gray;
+		}
+	}
+
 	p {
-		margin-right: 0;
-		margin-left: 0;
-		padding-bottom: 0;
+		~ {
+			span {
+				opacity: 0.8;
+			}
+		}
 	}
 }
