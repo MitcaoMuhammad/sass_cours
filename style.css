@@ -1,11 +1,19 @@
-ul > li {
-  list-style-type: none;
+.heading {
+  font-family: "Helvetice", serif;
+  font-size: 48px;
+  font-weight: 800;
 }
-ul > h2 + p {
-  border-top: 1px solid gray;
+
+.enlarge {
+  transition-property: all;
+  transition-duration: 4s;
+  transition-delay: 2s;
 }
-ul > p ~ span {
-  opacity: 0.8;
+
+.info-page {
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

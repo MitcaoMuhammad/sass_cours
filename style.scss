@@ -1,19 +1,22 @@
-ul > {
-	li {
-		list-style-type: none;
+.heading {
+	font: {
+		family: 'Helvetice', serif;
+		size: 48px;
+		weight: 800;
 	}
+}
 
-	h2 {
-		+ p {
-			border-top: 1px solid gray;
-		}
+.enlarge {
+	transition: {
+		property: all;
+		duration: 4s;
+		delay: 2s;
 	}
+}
 
-	p {
-		~ {
-			span {
-				opacity: 0.8;
-			}
-		}
+.info-page {
+	margin: auto {
+		bottom: 10px;
+		top: 2px;
 	}
 }
