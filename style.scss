@@ -1,6 +1,11 @@
-$border-color: #c6538c;
-$border-type: solid;
+$global-variable: global value;
 
-.alert {
-	border: 1px $border-type $border-color;
+.content {
+	$local-variable: local value;
+	global: $global-variable;
+	local: $local-variable;
+}
+
+.sidebar {
+	global: $global-variable;
 }
