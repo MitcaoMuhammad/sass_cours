@@ -1,28 +1,10 @@
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		a {
-			color: red;
-		}
-	}
-
-	li {
-		display: inline-block;
-	}
-
-	a {
-		display: block;
-		padding: 6px 12px;
-		text-decoration: none;
-	}
-
-	.button {
-		border-radius: 4px;
-
-		span {
-			font-weight: 400;
-		}
+.alert,
+.warning,
+.success {
+	ul,
+	p {
+		margin-right: 0;
+		margin-left: 0;
+		padding-bottom: 0;
 	}
 }
