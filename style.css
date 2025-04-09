@@ -1,18 +1,21 @@
-code {
-  padding: 0.25em;
-  line-height: 0;
+.square-av {
+  width: 100px;
+  height: 100px;
 }
 
-ul,
-ol {
-  text-align: left;
+.circle-av {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
-ul ul,
-ul ol,
-ol ul,
-ol ol {
-  padding-bottom: 0;
-  padding-left: 0;
+
+.banner {
+  background-color: #f2ece4;
+  color: #036;
+}
+body.dark .banner {
+  background-color: #6b717f;
+  color: #d2e1dd;
 }
 
 /*# sourceMappingURL=style.css.map */
