@@ -1,23 +1,7 @@
-$sizes: 40px, 50px, 80px;
+$base-color: #036;
 
-@each $size in $sizes {
-	.icon-#{$size} {
-		font-size: $size;
-		height: $size;
-		width: $size;
-	}
-}
-
-$icons: (
-	'eye': '\f112',
-	'start': '\f12e',
-	'stop': '\f12f',
-);
-
-@each $name, $glyph in $icons {
-	.icon-#{$name}:before {
-		display: inline-block;
-		font-family: 'Icon Font';
-		content: $glyph;
+@for $i from 1 through 3 {
+	ul:nth-child(3n + #{$i}) {
+		background-color: lighten($base-color, $i * 5%);
 	}
 }

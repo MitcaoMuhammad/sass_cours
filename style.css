@@ -1,37 +1,13 @@
-.icon-40px {
-  font-size: 40px;
-  height: 40px;
-  width: 40px;
+ul:nth-child(3n+1) {
+  background-color: rgb(0, 63.75, 127.5);
 }
 
-.icon-50px {
-  font-size: 50px;
-  height: 50px;
-  width: 50px;
+ul:nth-child(3n+2) {
+  background-color: rgb(0, 76.5, 153);
 }
 
-.icon-80px {
-  font-size: 80px;
-  height: 80px;
-  width: 80px;
-}
-
-.icon-eye:before {
-  display: inline-block;
-  font-family: "Icon Font";
-  content: "\f112";
-}
-
-.icon-start:before {
-  display: inline-block;
-  font-family: "Icon Font";
-  content: "\f12e";
-}
-
-.icon-stop:before {
-  display: inline-block;
-  font-family: "Icon Font";
-  content: "\f12f";
+ul:nth-child(3n+3) {
+  background-color: rgb(0, 89.25, 178.5);
 }
 
 /*# sourceMappingURL=style.css.map */
