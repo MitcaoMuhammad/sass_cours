@@ -1,5 +1,19 @@
-span.alert-danger {
-  color: red;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2em;
+}
+
+.sidebar {
+  float: left;
+}
+[dir=rtl] .sidebar {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
