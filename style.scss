@@ -1,11 +1,11 @@
-@mixin reflexive-position($property, $value) {
-	@if $property != left and $property != right {
-		@error "Property #{$property} must be either left or right.";
+@mixin prefix($property, $value) {
+	@if unitless($value) {
+		@warn "0'lchov birligiga ega bo'lmagani uchun px'ga	convert qilinadi";
+		$value: $value * 1px;
 	}
-
 	#{$property}: $value;
 }
 
-.sidebar {
-	@include reflexive-position(top, 12px);
+.tilt {
+	@include reflexive-position(top, 10);
 }
