@@ -1,49 +1,35 @@
-@use 'sass:map';
+.alert {
+	&:hover {
+		font-weight: bold;
+	}
 
-$font-weights: (
-	'reguler': 400,
-	'medium': 500,
-	'bold': 700,
-);
+	[dir='rtl'] & {
+		margin-left: 0;
+		margin-right: 10px;
+	}
 
-@debug map.git($font-weights, 'medium');
-@debug map.git($font-weights, 'extra-bold');
+	&.alert-danger {
+		color: red;
+	}
+}
 
-@debug map.set($font-weights, 'extra-bold', 900);
-@debug map.set($font-weights, 'bold', 900);
+.accordion {
+	max-width: 600px;
+	margin: 4rem auto;
+	width: 90%;
+	font-family: 'Raleway', sans-serif;
+	background: #f4f4f4;
 
-$light-weights: (
-	'lightest': 100,
-	'light': 300,
-);
-$heavy-weights: (
-	'medium': 500,
-	'bold': 700,
-);
+	&__copy {
+		display: none;
+		padding: 1rem 1.5rem 2rem 1.5rem;
+		color: gray;
+		line-height: 1.6;
+		font-size: 14px;
+		font-weight: 500;
 
-@debug map.merge($light-weights, $heavy-weights);
-
-$weights: (
-	'light': 300,
-	'medium': 500,
-);
-
-@debug map.merge(
-	$weights,
-	(
-		'medium': 500,
-	)
-);
-
-$buttons: (
-	'succes': green,
-	'danger': red,
-	'warning': yellow,
-);
-
-@each $name, $color in $buttons {
-	.button-#{$name} {
-		display: inline-block;
-		background-color: $color;
+		&--open {
+			display: block;
+		}
 	}
 }
