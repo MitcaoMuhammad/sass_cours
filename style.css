@@ -1,9 +1,9 @@
-/* Error: @use rules must be written before any other rules.
- *    ,
- * 15 | @use 'sass:list';
- *    | ^^^^^^^^^^^^^^^^
- *    '
- *   style.scss 15:1  root stylesheet */
+/* Error: Undefined function.
+ *   ,
+ * 9 | @debug map.git($font-weights, 'medium');
+ *   |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   style.scss 9:8  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: @use rules must be written before any other rules.\a    \2577 \a 15 \2502  @use 'sass:list';\d\a    \2502  ^^^^^^^^^^^^^^^^\a    \2575 \a   style.scss 15:1  root stylesheet";
+  content: "Error: Undefined function.\a   \2577 \a 9 \2502  @debug map.git($font-weights, 'medium');\d\a   \2502         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   style.scss 9:8  root stylesheet";
 }
