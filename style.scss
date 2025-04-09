@@ -1,10 +1,23 @@
-$color: red;
+$body-font-size: 16px;
 
-.section-1 {
-	color: $color;
+body {
+	font-size: $body-font-size;
 }
 
-.section-1 {
-	$color: green;
-	color: $color;
+h3 {
+	font-size: $body-font-size * 3;
 }
+
+small {
+	font-size: $body-font-size / 4;
+}
+
+@debug 100px + 50;
+@debug 4s * 10;
+
+@debug +(5s + 7s);
+@debug -(50px + 30);
+@debug -(10px - 15px);
+
+@debug 1in + 6px;
+@debug 1s + 100ms;
