@@ -1,9 +1,24 @@
-@function add($first, $second) {
-	$result: $first + $second;
-	@return $result;
+.error {
+	border: 1px #f00;
+	background-color: #fdd;
+
+	&--serious {
+		@extend .error;
+		border-width: 3px;
+	}
 }
 
-.sidebar {
-	float: left;
-	margin-left: add(10, 20) * 1px;
+.another-error {
+	@extend .error;
+}
+
+%button {
+	border-radius: 4px;
+	color: white;
+	background-color: black;
+}
+
+.strong-button {
+	@extend %button;
+	font-weight: bold;
 }
