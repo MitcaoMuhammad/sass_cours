@@ -1,23 +1,29 @@
-$body-font-size: 16px;
+$font-family: Arial, Helvetica, sans-serif;
+$box-shadow: 10px 15px 0 0;
 
-body {
-	font-size: $body-font-size;
+.selector {
+	font-family: $font-family;
 }
 
-h3 {
-	font-size: $body-font-size * 3;
+.another-selector {
+	box-shadow: $box-shadow gray;
 }
 
-small {
-	font-size: $body-font-size / 4;
-}
+$variable1: [];
+$variable2: ();
 
-@debug 100px + 50;
-@debug 4s * 10;
+@use 'sass:list';
 
-@debug +(5s + 7s);
-@debug -(50px + 30);
-@debug -(10px - 15px);
+@debug list.nth(10px 12px 16px, 3);
+@debug list.nth([lina lina2 lina3], -1);
 
-@debug 1in + 6px;
-@debug 1s + 100ms;
+@use 'sass:list';
+
+@debug append(10px 12px 16px, 25px);
+@debug append([col1-lina1], col1-lin);
+
+@use 'sass:list';
+
+@debug list.index(1px solid red, 1px);
+@debug list.index(1px solid red, solid);
+@debug list.index(1px solid red, dashed);
