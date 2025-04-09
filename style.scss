@@ -1,8 +1,7 @@
-$counter: 3;
+@use 'sass:color';
 
-@while $counter > 0 {
-	.counter-#{$counter} {
-		background-color: lighten(#ccc, $counter * 2);
-	}
-	$counter: $counter;
+.button {
+	$primary-color: #6b717f;
+	color: $primary-color;
+	border: 1px solid color($primary-color, $lightness: 20%);
 }
