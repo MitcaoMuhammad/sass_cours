@@ -1,11 +1,8 @@
-@mixin prefix($property, $value) {
-	@if unitless($value) {
-		@warn "0'lchov birligiga ega bo'lmagani uchun px'ga	convert qilinadi";
-		$value: $value * 1px;
-	}
-	#{$property}: $value;
-}
+@use 'foundation/code';
+@use 'foundation/lists';
+@use 'foundation/corners' as c;
 
-.tilt {
-	@include reflexive-position(top, 10);
+.button {
+	@include c.rounded;
+	padding: 5px + c.$radius;
 }
