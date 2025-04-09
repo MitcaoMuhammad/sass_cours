@@ -1,10 +1,9 @@
-.content {
-  global: global value;
-  local: local value;
+.section-1 {
+  color: red;
 }
 
-.sidebar {
-  global: global value;
+.section-1 {
+  color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

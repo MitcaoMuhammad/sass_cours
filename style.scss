@@ -1,11 +1,10 @@
-$global-variable: global value;
+$color: red;
 
-.content {
-	$local-variable: local value;
-	global: $global-variable;
-	local: $local-variable;
+.section-1 {
+	color: $color;
 }
 
-.sidebar {
-	global: $global-variable;
+.section-1 {
+	$color: green;
+	color: $color;
 }
