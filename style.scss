@@ -1,7 +1,8 @@
-$base-color: #036;
+$counter: 3;
 
-@for $i from 1 through 3 {
-	ul:nth-child(3n + #{$i}) {
-		background-color: lighten($base-color, $i * 5%);
+@while $counter > 0 {
+	.counter-#{$counter} {
+		background-color: lighten(#ccc, $counter * 2);
 	}
+	$counter: $counter;
 }
