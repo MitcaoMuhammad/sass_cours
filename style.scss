@@ -1,24 +1,11 @@
-.error {
-	border: 1px #f00;
-	background-color: #fdd;
-
-	&--serious {
-		@extend .error;
-		border-width: 3px;
+@mixin reflexive-position($property, $value) {
+	@if $property != left and $property != right {
+		@error "Property #{$property} must be either left or right.";
 	}
+
+	#{$property}: $value;
 }
 
-.another-error {
-	@extend .error;
-}
-
-%button {
-	border-radius: 4px;
-	color: white;
-	background-color: black;
-}
-
-.strong-button {
-	@extend %button;
-	font-weight: bold;
+.sidebar {
+	@include reflexive-position(top, 12px);
 }
