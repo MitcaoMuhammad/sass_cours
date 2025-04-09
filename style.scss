@@ -1,8 +1,1 @@
-@use 'foundation/code';
-@use 'foundation/lists';
-@use 'foundation/corners' as c;
-
-.button {
-	@include c.rounded;
-	padding: 5px + c.$radius;
-}
+@import 'foundation/code', 'foundation/lists';

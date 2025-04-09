@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["foundation/_code.scss","foundation/_lists.scss","style.scss","foundation/_corners.scss"],"names":[],"mappings":"AAAA;EACC;EACA;;;ACFD;AAAA;EAEC;;AAEA;AAAA;AAAA;AAAA;EAEE;EACA;;;ACHH;ECDC,eAHQ;EDMR","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["foundation/_code.scss","foundation/_lists.scss"],"names":[],"mappings":"AAAA;EACC;EACA;;;ACFD;AAAA;EAEC;;AAEA;AAAA;AAAA;AAAA;EAEE;EACA","file":"style.css"}
